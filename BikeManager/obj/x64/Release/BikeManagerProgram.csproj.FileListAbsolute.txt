@@ -1,0 +1,13 @@
+D:\BikeManager1.30\BikeManager1.25\BikeManager1.22\BikeManager\obj\x64\Release\BikeManagerProgram.csprojResolveAssemblyReference.cache
+D:\BikeManager1.30\BikeManager1.25\BikeManager1.22\BikeManager\obj\x64\Release\BikeManagerProgram.Form_Bike_DeleteConfirm.resources
+D:\BikeManager1.30\BikeManager1.25\BikeManager1.22\BikeManager\obj\x64\Release\BikeManagerProgram.Form_Bike_Modify.resources
+D:\BikeManager1.30\BikeManager1.25\BikeManager1.22\BikeManager\obj\x64\Release\BikeManagerProgram.Form_Bike_Reg.resources
+D:\BikeManager1.30\BikeManager1.25\BikeManager1.22\BikeManager\obj\x64\Release\BikeManagerProgram.Form_Main.resources
+D:\BikeManager1.30\BikeManager1.25\BikeManager1.22\BikeManager\obj\x64\Release\BikeManagerProgram.Form_Member_DeleteConfirm.resources
+D:\BikeManager1.30\BikeManager1.25\BikeManager1.22\BikeManager\obj\x64\Release\BikeManagerProgram.Form_Member_Modify.resources
+D:\BikeManager1.30\BikeManager1.25\BikeManager1.22\BikeManager\obj\x64\Release\BikeManagerProgram.Form_Member_Reg.resources
+D:\BikeManager1.30\BikeManager1.25\BikeManager1.22\BikeManager\obj\x64\Release\BikeManagerProgram.Form_Rent.resources
+D:\BikeManager1.30\BikeManager1.25\BikeManager1.22\BikeManager\obj\x64\Release\BikeManagerProgram.Form_Return.resources
+D:\BikeManager1.30\BikeManager1.25\BikeManager1.22\BikeManager\obj\x64\Release\BikeManagerProgram.Logo.resources
+D:\BikeManager1.30\BikeManager1.25\BikeManager1.22\BikeManager\obj\x64\Release\BikeManagerProgram.Properties.Resources.resources
+D:\BikeManager1.30\BikeManager1.25\BikeManager1.22\BikeManager\obj\x64\Release\BikeManagerProgram.csproj.GenerateResource.Cache

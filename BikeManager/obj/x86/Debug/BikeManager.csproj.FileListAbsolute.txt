@@ -1,0 +1,63 @@
+c:\users\bethemoney\documents\visual studio 2010\Projects\BikeManager\BikeManager\bin\Debug\BikeManager.exe
+c:\users\bethemoney\documents\visual studio 2010\Projects\BikeManager\BikeManager\bin\Debug\BikeManager.pdb
+c:\users\bethemoney\documents\visual studio 2010\Projects\BikeManager\BikeManager\bin\Debug\Npgsql.dll
+c:\users\bethemoney\documents\visual studio 2010\Projects\BikeManager\BikeManager\bin\Debug\Mono.Security.dll
+c:\users\bethemoney\documents\visual studio 2010\Projects\BikeManager\BikeManager\bin\Debug\Npgsql.pdb
+c:\users\bethemoney\documents\visual studio 2010\Projects\BikeManager\BikeManager\bin\Debug\Npgsql.xml
+c:\users\bethemoney\documents\visual studio 2010\Projects\BikeManager\BikeManager\bin\Debug\de\Npgsql.resources.dll
+c:\users\bethemoney\documents\visual studio 2010\Projects\BikeManager\BikeManager\bin\Debug\es\Npgsql.resources.dll
+c:\users\bethemoney\documents\visual studio 2010\Projects\BikeManager\BikeManager\bin\Debug\fi\Npgsql.resources.dll
+c:\users\bethemoney\documents\visual studio 2010\Projects\BikeManager\BikeManager\bin\Debug\fr\Npgsql.resources.dll
+c:\users\bethemoney\documents\visual studio 2010\Projects\BikeManager\BikeManager\bin\Debug\ja\Npgsql.resources.dll
+c:\users\bethemoney\documents\visual studio 2010\Projects\BikeManager\BikeManager\bin\Debug\zh-CN\Npgsql.resources.dll
+c:\users\bethemoney\documents\visual studio 2010\Projects\BikeManager\BikeManager\obj\x86\Debug\ResolveAssemblyReference.cache
+c:\users\bethemoney\documents\visual studio 2010\Projects\BikeManager\BikeManager\obj\x86\Debug\BikeManager.Form_Main.resources
+c:\users\bethemoney\documents\visual studio 2010\Projects\BikeManager\BikeManager\obj\x86\Debug\BikeManager.Properties.Resources.resources
+c:\users\bethemoney\documents\visual studio 2010\Projects\BikeManager\BikeManager\obj\x86\Debug\ResGen.read.1.tlog
+c:\users\bethemoney\documents\visual studio 2010\Projects\BikeManager\BikeManager\obj\x86\Debug\ResGen.write.1.tlog
+c:\users\bethemoney\documents\visual studio 2010\Projects\BikeManager\BikeManager\obj\x86\Debug\BikeManager.exe
+c:\users\bethemoney\documents\visual studio 2010\Projects\BikeManager\BikeManager\obj\x86\Debug\BikeManager.pdb
+C:\Users\Bethemoney\Documents\Visual Studio 2010\Projects\BikeManager\BikeManager\obj\x86\Debug\ResGen.read.4.tlog
+C:\Users\Bethemoney\Documents\Visual Studio 2010\Projects\BikeManager\BikeManager\obj\x86\Debug\BikeManager.Logo.resources
+F:\Visual Studio Project\BikeManager\BikeManager\obj\x86\Debug\BikeManager.exe
+F:\Visual Studio Project\BikeManager\BikeManager\obj\x86\Debug\BikeManager.pdb
+F:\Visual Studio Project\BikeManager\BikeManager\bin\Debug\BikeManager.exe
+F:\Visual Studio Project\BikeManager\BikeManager\bin\Debug\BikeManager.pdb
+F:\Visual Studio Project\BikeManager\BikeManager\bin\Debug\Mono.Security.dll
+F:\Visual Studio Project\BikeManager\BikeManager\bin\Debug\Npgsql.pdb
+F:\Visual Studio Project\BikeManager\BikeManager\bin\Debug\Npgsql.xml
+F:\Visual Studio Project\BikeManager\BikeManager\bin\Debug\de\Npgsql.resources.dll
+F:\Visual Studio Project\BikeManager\BikeManager\bin\Debug\es\Npgsql.resources.dll
+F:\Visual Studio Project\BikeManager\BikeManager\bin\Debug\fi\Npgsql.resources.dll
+F:\Visual Studio Project\BikeManager\BikeManager\bin\Debug\fr\Npgsql.resources.dll
+F:\Visual Studio Project\BikeManager\BikeManager\bin\Debug\ja\Npgsql.resources.dll
+F:\Visual Studio Project\BikeManager\BikeManager\bin\Debug\zh-CN\Npgsql.resources.dll
+F:\Visual Studio Project\BikeManager\BikeManager\obj\x86\Debug\BikeManager.csprojResolveAssemblyReference.cache
+F:\Visual Studio Project\BikeManager\BikeManager\obj\x86\Debug\BikeManager.Form_Main.resources
+F:\Visual Studio Project\BikeManager\BikeManager\obj\x86\Debug\BikeManager.Logo.resources
+F:\Visual Studio Project\BikeManager\BikeManager\obj\x86\Debug\BikeManager.Properties.Resources.resources
+F:\Visual Studio Project\BikeManager\BikeManager\obj\x86\Debug\BikeManager.csproj.GenerateResource.Cache
+C:\Users\bethemoney_LAB\Desktop\FTP_HOME\BikeManager\BikeManager\obj\x86\Debug\BikeManager.exe
+C:\Users\bethemoney_LAB\Desktop\FTP_HOME\BikeManager\BikeManager\obj\x86\Debug\BikeManager.pdb
+C:\Users\bethemoney_LAB\Desktop\FTP_HOME\BikeManager\BikeManager\bin\Debug\BikeManager.exe
+C:\Users\bethemoney_LAB\Desktop\FTP_HOME\BikeManager\BikeManager\bin\Debug\BikeManager.pdb
+C:\Users\bethemoney_LAB\Desktop\FTP_HOME\BikeManager\BikeManager\bin\Debug\Mono.Security.dll
+C:\Users\bethemoney_LAB\Desktop\FTP_HOME\BikeManager\BikeManager\bin\Debug\Npgsql.pdb
+C:\Users\bethemoney_LAB\Desktop\FTP_HOME\BikeManager\BikeManager\bin\Debug\Npgsql.xml
+C:\Users\bethemoney_LAB\Desktop\FTP_HOME\BikeManager\BikeManager\bin\Debug\de\Npgsql.resources.dll
+C:\Users\bethemoney_LAB\Desktop\FTP_HOME\BikeManager\BikeManager\bin\Debug\es\Npgsql.resources.dll
+C:\Users\bethemoney_LAB\Desktop\FTP_HOME\BikeManager\BikeManager\bin\Debug\fi\Npgsql.resources.dll
+C:\Users\bethemoney_LAB\Desktop\FTP_HOME\BikeManager\BikeManager\bin\Debug\fr\Npgsql.resources.dll
+C:\Users\bethemoney_LAB\Desktop\FTP_HOME\BikeManager\BikeManager\bin\Debug\ja\Npgsql.resources.dll
+C:\Users\bethemoney_LAB\Desktop\FTP_HOME\BikeManager\BikeManager\bin\Debug\zh-CN\Npgsql.resources.dll
+C:\Users\bethemoney_LAB\Desktop\FTP_HOME\BikeManager\BikeManager\obj\x86\Debug\BikeManager.csprojResolveAssemblyReference.cache
+C:\Users\bethemoney_LAB\Desktop\FTP_HOME\BikeManager\BikeManager\obj\x86\Debug\BikeManager.Form_Main.resources
+C:\Users\bethemoney_LAB\Desktop\FTP_HOME\BikeManager\BikeManager\obj\x86\Debug\BikeManager.Logo.resources
+C:\Users\bethemoney_LAB\Desktop\FTP_HOME\BikeManager\BikeManager\obj\x86\Debug\BikeManager.Properties.Resources.resources
+C:\Users\bethemoney_LAB\Desktop\FTP_HOME\BikeManager\BikeManager\obj\x86\Debug\BikeManager.csproj.GenerateResource.Cache
+C:\Users\bethemoney_LAB\Desktop\FTP_HOME\BikeManager\BikeManager\obj\x86\Debug\BikeManager.Form_Rent.resources
+C:\Users\bethemoney_LAB\Desktop\FTP_HOME\BikeManager\BikeManager\obj\x86\Debug\BikeManager.Form_Return.resources
+C:\Users\bethemoney_LAB\Desktop\FTP_HOME\BikeManager\BikeManager\obj\x86\Debug\BikeManager.Form_MemberModify.resources
+C:\Users\bethemoney_LAB\Desktop\FTP_HOME\BikeManager\BikeManager\obj\x86\Debug\BikeManager.Form_MemberReg.resources
+C:\Users\bethemoney\Desktop\BikeManager\BikeManager\obj\x86\Debug\BikeManager.exe
+C:\Users\bethemoney\Desktop\BikeManager\BikeManager\obj\x86\Debug\BikeManager.pdb
