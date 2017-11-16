@@ -11,6 +11,8 @@ using BikeManagerProgram.MemberNS;
 using BikeManagerProgram.BikeNS;
 using System.Data.Common;
 using BikeManagerProgram.RentNS;
+using Excel = Microsoft.Office.Interop.Excel;
+using System.Diagnostics;
 
 namespace BikeManagerProgram
 {
@@ -467,6 +469,122 @@ namespace BikeManagerProgram
                            "FROM \"Rent\" r, \"Member\" m " +
                            "WHERE r.membercode = m.code AND r.bikecode LIKE '%" +  this.txtBox_Rent_BikeName.Text.ToUpper() + "%'";
             this.UpdateRentDataGridView(sql);
+        }
+
+        private void btn_export_member_Click(object sender, EventArgs e)
+        {
+            npgsql.DBConnect();
+            String sql = @"SELECT m.code, m.name, m.isfemale, m.etc, m.tel, m.city, m.county, m.address, m.regdate, COALESCE(COUNT(r.membercode),0) as count " +
+                            "FROM \"Member\" m LEFT OUTER JOIN \"Rent\" r ON (m.code = r.membercode) " +
+                            "GROUP BY m.code,m.name, m.isfemale, m.etc , m.tel, m.city, m.county,m.address ,m.regdate";
+            
+            IDataReader Reader = npgsql.ExecuteQuery(sql);
+            object TypMissing = Type.Missing;
+
+            Excel.Application ExcelApp = new Microsoft.Office.Interop.Excel.Application();
+
+            Excel.Workbook _workbook = null;
+            _workbook = ExcelApp.Workbooks.Add(Type.Missing);
+            _workbook.SaveAs(@".\회원정보" + DateTime.Now.ToString("yyyyMMdd") + ".xls", Excel.XlFileFormat.xlWorkbookNormal, TypMissing, TypMissing, TypMissing, TypMissing,
+                Excel.XlSaveAsAccessMode.xlNoChange, TypMissing, TypMissing, TypMissing, TypMissing, TypMissing);
+
+            Excel.Worksheet Sheet = (Excel.Worksheet)_workbook.Worksheets.get_Item("Sheet1");
+            Excel.Range Range_ = Sheet.get_Range("A1", Type.Missing);
+
+            Sheet.Cells[1, 1] = "회원코드";
+            Sheet.Cells[1, 2] = "이름";
+            Sheet.Cells[1, 3] = "성별";
+            Sheet.Cells[1, 4] = "생년월일";
+            Sheet.Cells[1, 5] = "전화번호";
+            Sheet.Cells[1, 6] = "주소";
+            Sheet.Cells[1, 7] = "등록일";
+            Sheet.Cells[1, 8] = "방문횟수";
+
+            int cnt = 2;
+            while (Reader.Read())
+            {
+                String code = (String)Reader["code"];
+                String name = (String)Reader["name"];
+                Boolean isfemale = (Boolean)Reader["isfemale"];
+                String etc = (String)Reader["etc"];
+                String tel = (String)Reader["tel"];
+                String address = (String)Reader["city"] + " " + (String)Reader["county"] + " " + (String)Reader["address"];
+                DateTime regdate = (DateTime)Reader["regdate"];
+                Int64 count = (Int64)Reader["count"];
+
+
+                Sheet.Cells[cnt, 1] = code;
+                Sheet.Cells[cnt, 2] = name;
+                Sheet.Cells[cnt, 3] = isfemale ? "여자" : "남자";
+                Sheet.Cells[cnt, 4] = etc;
+                Sheet.Cells[cnt, 5] = tel;
+                Sheet.Cells[cnt, 6] = address;
+                Sheet.Cells[cnt, 7] = regdate.ToString();
+                Sheet.Cells[cnt, 8] = count.ToString();
+                cnt++; 
+            }
+            Sheet.Columns.AutoFit();
+            _workbook.Save();
+            _workbook.Close();
+            ExcelApp.Workbooks.Close(); // 별효과 없음.
+            ExcelApp.Quit();
+            
+            npgsql.DBClose();
+        }
+
+        private void btn_export_bike_Click(object sender, EventArgs e)
+        {
+            npgsql.DBConnect();
+            String sql = @"SELECT b.code, b.type, b.initrentalshop, b.currentrentalshop, b.regdate, COALESCE(COUNT(r.membercode),0) as count " +
+    "FROM \"Bike\" b LEFT OUTER JOIN \"Rent\" r ON (b.code = r.bikecode) " +
+"GROUP BY b.code, b.type, b.initrentalshop, b.currentrentalshop, b.regdate";
+
+            IDataReader Reader = npgsql.ExecuteQuery(sql);
+            object TypMissing = Type.Missing;
+
+            Excel.Application ExcelApp = new Microsoft.Office.Interop.Excel.Application();
+
+            Excel.Workbook _workbook = null;
+            _workbook = ExcelApp.Workbooks.Add(Type.Missing);
+            _workbook.SaveAs(@".\자전거정보"+DateTime.Now.ToString("yyyyMMdd")+".xls", Excel.XlFileFormat.xlWorkbookNormal, TypMissing, TypMissing, TypMissing, TypMissing,
+                Excel.XlSaveAsAccessMode.xlNoChange, TypMissing, TypMissing, TypMissing, TypMissing, TypMissing);
+
+            Excel.Worksheet Sheet = (Excel.Worksheet)_workbook.Worksheets.get_Item("Sheet1");
+            Excel.Range Range_ = Sheet.get_Range("A1", Type.Missing);
+
+            Sheet.Cells[1, 1] = "자전거코드";
+            Sheet.Cells[1, 2] = "자전거 타입";
+            Sheet.Cells[1, 3] = "등록지";
+            Sheet.Cells[1, 4] = "현재자전거위치";
+            Sheet.Cells[1, 5] = "자전거등록일";
+            Sheet.Cells[1, 6] = "대여횟수";
+
+            int cnt = 2;
+            while (Reader.Read())
+            {
+                String code = (String)Reader["code"];
+                String type = (String)Reader["type"];
+                String initrentalshop = (String)Reader["initrentalshop"];
+                String currentrentalshop = (String)Reader["currentrentalshop"];
+                DateTime regdate = (DateTime)Reader["regdate"];
+                Int64 count = (Int64)Reader["count"];
+
+
+                Sheet.Cells[cnt, 1] = code;
+                Sheet.Cells[cnt, 2] = type;
+                Sheet.Cells[cnt, 3] = initrentalshop;
+                Sheet.Cells[cnt, 4] = currentrentalshop;
+                Sheet.Cells[cnt, 5] = regdate.ToString();
+                Sheet.Cells[cnt, 6] = count.ToString();
+                cnt++;
+            }
+            Sheet.Columns.AutoFit();
+            _workbook.Save();
+            _workbook.Close();
+            ExcelApp.Workbooks.Close(); // 별효과 없음.
+            ExcelApp.Quit();
+
+            npgsql.DBClose();
         }
     }
 }

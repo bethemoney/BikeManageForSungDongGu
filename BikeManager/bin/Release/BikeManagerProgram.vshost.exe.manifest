@@ -4,7 +4,7 @@
   <description asmv2:iconFile="Bike.ico" xmlns="urn:schemas-microsoft-com:asm.v1" />
   <application />
   <entryPoint>
-    <assemblyIdentity name="BikeManagerProgram" version="1.1.6117.28098" language="neutral" processorArchitecture="x86" />
+    <assemblyIdentity name="BikeManagerProgram" version="1.1.6529.34450" language="neutral" processorArchitecture="x86" />
     <commandLine file="BikeManagerProgram.exe" parameters="" />
   </entryPoint>
   <trustInfo>
@@ -44,6 +44,21 @@
   </dependency>
   <dependency>
     <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">
+      <assemblyIdentity name="Microsoft.Office.Interop.Excel" version="15.0.0.0" publicKeyToken="71E9BCE111E9429C" language="neutral" processorArchitecture="msil" />
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">
+      <assemblyIdentity name="Microsoft.Vbe.Interop" version="15.0.0.0" publicKeyToken="71E9BCE111E9429C" language="neutral" processorArchitecture="msil" />
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">
+      <assemblyIdentity name="office" version="15.0.0.0" publicKeyToken="71E9BCE111E9429C" language="neutral" processorArchitecture="msil" />
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">
       <assemblyIdentity name="System.Core" version="3.5.0.0" publicKeyToken="b77a5c561934e089" language="neutral" processorArchitecture="msil" />
     </dependentAssembly>
   </dependency>
@@ -58,14 +73,14 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="BikeManagerProgram.exe" size="321536">
-      <assemblyIdentity name="BikeManagerProgram" version="1.1.6117.28098" language="neutral" processorArchitecture="x86" />
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="BikeManagerProgram.exe" size="325632">
+      <assemblyIdentity name="BikeManagerProgram" version="1.1.6529.34450" language="neutral" processorArchitecture="x86" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-        <dsig:DigestValue>tYLt8xx6McCQKeMqm3LP0QumfZk=</dsig:DigestValue>
+        <dsig:DigestValue>sKh9c3vn9DU4ABlphdBAFHV5srY=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>

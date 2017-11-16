@@ -71,6 +71,7 @@ namespace BikeManagerProgram
             this.dgv_BikeList_ETC = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dgv_BikeList_BikeRegDate = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.tabPage_Statistic = new System.Windows.Forms.TabPage();
+            this.btn_export_member = new System.Windows.Forms.Button();
             this.cmboBox_Statistic_BikeType = new System.Windows.Forms.ComboBox();
             this.cmboBox_Statistic_Sex = new System.Windows.Forms.ComboBox();
             this.dataGridView_Statistic = new System.Windows.Forms.DataGridView();
@@ -95,6 +96,7 @@ namespace BikeManagerProgram
             this.dgv_Rent_MemID = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dgv_Rent_MemTelNum = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dgv_Rent_MemAddress = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.btn_export_bike = new System.Windows.Forms.Button();
             this.tabControl_Main.SuspendLayout();
             this.tabPage_Rent.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView_Rent)).BeginInit();
@@ -539,6 +541,8 @@ namespace BikeManagerProgram
             // 
             // tabPage_Statistic
             // 
+            this.tabPage_Statistic.Controls.Add(this.btn_export_bike);
+            this.tabPage_Statistic.Controls.Add(this.btn_export_member);
             this.tabPage_Statistic.Controls.Add(this.cmboBox_Statistic_BikeType);
             this.tabPage_Statistic.Controls.Add(this.cmboBox_Statistic_Sex);
             this.tabPage_Statistic.Controls.Add(this.dataGridView_Statistic);
@@ -554,6 +558,16 @@ namespace BikeManagerProgram
             this.tabPage_Statistic.TabIndex = 4;
             this.tabPage_Statistic.Text = "통계";
             this.tabPage_Statistic.UseVisualStyleBackColor = true;
+            // 
+            // btn_export_member
+            // 
+            this.btn_export_member.Location = new System.Drawing.Point(6, 6);
+            this.btn_export_member.Name = "btn_export_member";
+            this.btn_export_member.Size = new System.Drawing.Size(240, 30);
+            this.btn_export_member.TabIndex = 86;
+            this.btn_export_member.Text = "회원정보 엑셀로 내보내기";
+            this.btn_export_member.UseVisualStyleBackColor = true;
+            this.btn_export_member.Click += new System.EventHandler(this.btn_export_member_Click);
             // 
             // cmboBox_Statistic_BikeType
             // 
@@ -754,6 +768,16 @@ namespace BikeManagerProgram
             this.dgv_Rent_MemAddress.Name = "dgv_Rent_MemAddress";
             this.dgv_Rent_MemAddress.ReadOnly = true;
             // 
+            // btn_export_bike
+            // 
+            this.btn_export_bike.Location = new System.Drawing.Point(252, 6);
+            this.btn_export_bike.Name = "btn_export_bike";
+            this.btn_export_bike.Size = new System.Drawing.Size(240, 30);
+            this.btn_export_bike.TabIndex = 87;
+            this.btn_export_bike.Text = "자전거정보 엑셀로 내보내기";
+            this.btn_export_bike.UseVisualStyleBackColor = true;
+            this.btn_export_bike.Click += new System.EventHandler(this.btn_export_bike_Click);
+            // 
             // Form_Main
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 12F);
@@ -849,6 +873,8 @@ namespace BikeManagerProgram
         private System.Windows.Forms.RadioButton radioBtn_Returned;
         private System.Windows.Forms.RadioButton radioBtn_Renting;
         private System.Windows.Forms.RadioButton radioBtn_All;
+        private System.Windows.Forms.Button btn_export_member;
+        private System.Windows.Forms.Button btn_export_bike;
     }
 }
 
